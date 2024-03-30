@@ -4,7 +4,7 @@
     <meta charest="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <title>Front Mentor: NFT preview card component</title>
     <!-- Favicon Page ⬇ -->
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
     <!-- Render All Elements Normally ⬇ -->
@@ -17,13 +17,15 @@
   </head>
   <body>
     <div class="card-component">
-      <img
-        src="img/image-equilibrium.jpg"
-        alt="Equilibrium cube image"
-        class="card-component__card-img"
-      />
+      <div class="card-component__card-img-container">
+        <img
+          src="img/image-equilibrium.jpg"
+          alt="Equilibrium cube image"
+          class="card-component__card-img"
+        />
+      </div>
       <div class="card-component__card-details">
-        <h1 class="card-component__card-title">Equilibrium #3429</h1>
+        <h1><a href="#" class="card-component__card-title">Equilibrium #3429</a></h1>
         <p class="card-component__card-para">
           Our Equilibrium collection promomtes balance and calm.
         </p>
@@ -40,7 +42,7 @@
         <div class="card-component__card-username-info">
           <img src="img/image-avatar.png" alt="Profile image" class="card-component__card-username-img">
           <p class="card-component__card-username">
-            Creation of <span>Jules Wyvern</span>
+            Creation of <a href="#"><span>Jules Wyvern</span></a>
           </p>
         </div>
       </div>

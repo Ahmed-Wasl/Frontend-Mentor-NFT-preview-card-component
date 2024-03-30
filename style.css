@@ -26,7 +26,10 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.6
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
 }
 /* End Global Rules */
 
@@ -35,15 +38,47 @@ body {
   background-color: var(--card-bg);
   padding: 20px 20px 35px;
   border-radius: 15px;
+  
 }
-.card-component img.card-component__card-img {
+.card-component .card-component__card-img-container img.card-component__card-img {
   width: 100%;
   border-radius: 10px;
 }
-.card-component .card-component__card-details h1.card-component__card-title {
+/* start img:hover icon  */
+.card-component .card-component__card-img-container {
+  position: relative;
+}
+.card-component .card-component__card-img-container::before,
+.card-component .card-component__card-img-container::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  height: 97%;
+  width: 100%;
+  border-radius: 10px;
+  z-index: 1;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.card-component .card-component__card-img-container:hover::before {
+  background-color: var(--text-color2);
+  opacity: .5;
+}
+.card-component .card-component__card-img-container:hover::after {
+  content: url(img/icon-view.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end img:hover icon  */
+.card-component .card-component__card-details h1 a.card-component__card-title {
   font-size: 22px;
   font-weight: normal;
   color: var(--white-color);
+  transition: all .3s ease;
+}
+.card-component .card-component__card-details h1 a.card-component__card-title:hover {
+  color: var(--text-color2);
 }
 .card-component .card-component__card-details p.card-component__card-para {
   color: var(--text-color1);
@@ -83,4 +118,8 @@ body {
 }
 .card-component .card-component__card-details .card-component__card-username-info p.card-component__card-username span {
   color: var(--white-color);
+  transition: all .3s ease;
+}
+.card-component .card-component__card-details .card-component__card-username-info p.card-component__card-username span:Hover {
+  color: var(--text-color2);
 }

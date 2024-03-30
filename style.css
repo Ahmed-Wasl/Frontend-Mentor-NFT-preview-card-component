@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+/* Start Variables */
+:root {
+  --body-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --text-color1: hsl(215, 51%, 70%);
+  --text-color2: hsl(178, 100%, 50%);
+  --line-color: hsl(215, 32%, 27%);
+  --white-color: white;
+}
+/* End Variables */
+/* Start Global Rules */
+:is(*, *::before, *::after) {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--body-bg);
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.6
+}
+/* End Global Rules */
+
+.card-component {
+  width: 350px;
+  background-color: var(--card-bg);
+  padding: 20px 20px 35px;
+  border-radius: 15px;
+}
+.card-component img.card-component__card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card-component .card-component__card-details h1.card-component__card-title {
+  font-size: 22px;
+  font-weight: normal;
+  color: var(--white-color);
+}
+.card-component .card-component__card-details p.card-component__card-para {
+  color: var(--text-color1);
+}
+.card-component .card-component__card-details .card-component__card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-block: 20px;
+  border-bottom: 1px solid var(--line-color);
+}
+.card-component .card-component__card-details .card-component__card-info p.card-component__card-data {
+  display: flex;
+  align-items: center;
+}
+.card-component .card-component__card-details .card-component__card-info p.card-component__card-data svg.card-component__card-icon {
+  margin-right: 5px;
+}
+.card-component .card-component__card-details .card-component__card-info p.card-component__card-nft {
+  color: var(--text-color2);
+}
+.card-component .card-component__card-details .card-component__card-info p.card-component__card-date {
+  color: var(--text-color1);
+}
+.card-component .card-component__card-details .card-component__card-username-info {
+  display: flex;
+  align-items: center;
+}
+.card-component .card-component__card-details .card-component__card-username-info img.card-component__card-username-img {
+  width: 2em;
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.card-component .card-component__card-details .card-component__card-username-info p.card-component__card-username {
+  color: var(--text-color1);
+}
+.card-component .card-component__card-details .card-component__card-username-info p.card-component__card-username span {
+  color: var(--white-color);
+}
